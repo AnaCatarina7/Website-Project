@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+  font-family: 'Lora', serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+                                   /*LOGO*/
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 70px;
+}
+
+.logo_image {
+    width: 40px;
+    margin-left: 40px;
+}
+
+.logo_text {
+    font-size: 27px;
+    color: #f2f2f2;
+    font-weight: bold;
+    padding-left: 10px;
+}
+                                   /*NAV BAR*/
+
+.selectedLink {
+    background-color: #987862;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.navbar {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    z-index: 10;
+    overflow: hidden;
+    height: 70px;
+    width: 100%;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar span a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.navbar span a:hover {
+    color: #f2f2f2;
+}
+
+.navbar ul {
+    list-style: none;
+    float: right;
+    margin-left: auto;
+    margin-right: 25px;
+    display: flex;
+}
+
+.navbar ul li {
+    line-height: 70px;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+    color: #f2f2f2;
+    text-decoration: none;
+} 
+
+.navbar a:hover {
+    color: #a18171;
+    text-decoration: none;
+}
+
+                                 /*SEARCH BAR*/
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+    margin-right: 40px;
+}
+
+.search_text {
+    font-size: 14px;
+    color: #4E3829;
+    margin-left: 15px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 250px;
+}
+
+@media (max-width: 768px) {
+.navbar .container {
+      flex-direction: column;
+    }
+  
+.logo {
+      order: 1;
+    }
+  
+.search {
+      order: 2;
+      margin-bottom: 10px;
+    }
+  
+.navbar ul {
+      order: 3;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  }
+  

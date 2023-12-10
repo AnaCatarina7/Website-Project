@@ -1,0 +1,144 @@
+@import url(/header.css); 
+@import url(/footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+    background-color: rgb(242, 233, 233);
+}
+
+/*Genres Categorias*/
+
+.genres h1 {
+    align-items: center;
+    font-size: 45px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+.genres_grid {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    padding: 30px 0 30px 15px;
+    transition: .3s ease;
+}
+
+.genres_card {
+    width: 280px;
+    text-align: center;
+    background-color: #ebdcd8;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 10px;
+    transition: .3s ease;
+}
+
+.genres_card:hover {
+    transform: scale(1.1);
+    background-color: #e1c8c2;
+}
+
+.genres img {
+    width: 250px;
+    transition: .3s ease;
+    margin: 10px 10px 5px 10px;
+    padding: 10px 0 10px 0;
+}
+
+.genres h3 a {
+    text-decoration: none;
+    color: #4E3829;
+}
+
+.genres h3 a:hover {
+    color:#D7926F;
+}
+
+/*Genres Books*/
+
+.books {
+    padding: 30px 40px 0 40px;
+}
+
+.books h1 {
+    font-size: 45px;
+}
+
+.book_box {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    overflow: hidden;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.book_card {
+    width: 295px;
+    text-align: center;
+}
+
+.books img {
+    width: 175px;
+    transition: .3s ease;
+    margin: 10px 10px 5px 10px;
+    padding: 10px 0 10px 0;
+    border-radius: 20px;
+}
+
+.books img:hover {
+    transform: scale(1.1);
+}
+
+.books h3 {
+    font-size: 20px;
+}
+
+.books h3 a {
+    text-decoration: none;
+    color:#4E3829;
+}
+
+.books h3 a:hover {
+    color: #D7926F;
+}
+
+.book_tag a {
+    text-decoration: none;
+    color: #D7926F;
+}
+
+.book_tag {
+    margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 800px) {
+.book_box {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+.books {
+    padding: 10px 20px 0 20px;
+  }
+.books h1 {
+    font-size: 30px;
+  }
+.book_box {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+.book_card {
+    width: 100%;
+  }
+.books img {
+    width: 100%;
+  }
+.books h3 {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,116 @@
+@import url(/header.css); 
+@import url(/footer.css); 
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+    background-color: rgb(242, 233, 233);
+}
+
+/*NEWS*/
+
+.news {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.news img {
+    width: 530px;
+    margin-right: 30px;
+    position: relative;
+}
+
+.white_box {
+    width: auto;
+    background-color: white;
+    position: absolute;
+    padding: 0 0 30px 30px;
+}
+
+
+.news_img {
+    position: absolute;
+    display: flex;
+    margin-left: 120px;
+    align-items: center;
+}
+
+.news_title {
+    padding: 0 50px 0 20px;
+}
+
+.news_box_img {
+    position: relative;
+    top: 20px;
+    display: flex;
+}
+
+.news_box_img p {
+    background-color: #cfb7ab;
+    width: 200px;
+}
+
+.news_title h1 {
+    font-size: 40px;
+    color: #644f42;
+}
+
+.news_title h2 {
+    font-size: 20px;
+}
+
+.news h3 {
+    font-size: 20px;
+}
+
+.news_title {
+    width: 500px;
+    padding-bottom: 250px;
+}
+
+.news_info {
+    width: 75%;
+    padding: 110px 60px 30px 60px; 
+    background-color:#cfb7ab;
+    margin-top: 350px;
+    border-radius: 20px;
+}
+
+.news_schedule h3 {
+    text-align: center;
+    background-color: #b09a8c;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.news_schedule{
+    text-align: center;
+    color: #4d372a;
+} 
+
+@media only screen and (max-width: 769px) { 
+.news {
+    flex-direction: column;
+    align-items: center;
+    }
+.news img {
+    width: 80%;
+    margin-right: 0;
+    }
+.news_img {
+    position: static;
+    margin-left: 0;
+    flex-direction: column;
+    }
+.news_title {
+    padding: 1rem;
+    width: 80%;
+    }
+.news_info {
+    width: 80%;
+    padding: 3rem 1rem 1rem; 
+    margin-top: 10rem;
+    }
+}
